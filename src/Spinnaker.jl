@@ -70,6 +70,8 @@ function init()
       paths = [joinpath(ENV["ProgramFiles"], "Point Grey Research", "Spinnaker", "bin", "vs2015")]
     elseif isdir(joinpath(ENV["ProgramFiles"], "FLIR Systems", "Spinnaker", "bin64", "vs2015"))
       paths = [joinpath(ENV["ProgramFiles"], "FLIR Systems", "Spinnaker", "bin64", "vs2015")]
+    elseif isdir(joinpath(ENV["ProgramFiles"], "Teledyne", "Spinnaker", "bin64", "vs2015"))
+      paths = [joinpath(ENV["ProgramFiles"], "Teledyne", "Spinnaker", "bin64", "vs2015")]
     end
     libspinnaker = "SpinnakerC_v140.dll"
     libspinvideo = "SpinVideoC_v140.dll"
